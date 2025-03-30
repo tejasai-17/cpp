@@ -96,8 +96,8 @@ double deposit(){
     else{
         std::cout << "Not a valid amount to enter";
     }
-
 }
+
 
 double withdraw(){
     double amount;
@@ -112,6 +112,7 @@ double withdraw(){
         std::cout << "Not a valid amount to enter";
     }
 }
+
 
 void viewbalance(double balance){
     std::cout << "Your balance: " << balance << "\n";
