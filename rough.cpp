@@ -43,77 +43,118 @@ int main(){
 // }
 
 
-#include <iostream>
+// #include <iostream>
 
-double deposit();
-double withdraw();
-void viewbalance(double balance);
+// double deposit();
+// double withdraw();
+// void viewbalance(double balance);
+
+// int main(){
+
+//     int choise;
+//     double balance;
+
+//     do
+//     {
+//         std::cout << "Enter any bellow option\n" << "1. deposit\n" << "2. withdraw\n" << "3. viewbalance\n" << "4. Exit\n";
+//     std::cin >> choise;
+    
+//     switch (choise)
+//     {
+//     case 1:
+//         balance += deposit();
+//         viewbalance(balance);
+//         break;
+//     case 2:
+//         balance -= withdraw();
+//         viewbalance(balance);
+//         break;
+//     case 3:
+//         viewbalance(balance);
+//         break;
+//     case 4:
+//         std::cout << "thank you";
+//         break;
+//     default: 
+//         std::cout << "Enter valid choise"; 
+//     }
+//     } while (choise != 4);
+    
+
+//     return 0;
+// }
+
+// double deposit(){
+//     double amount;
+
+//     std::cout << "Enter the depoist amount: ";
+//     std::cin >> amount;
+    
+//     if(amount>0){
+//         return amount;
+//     }
+//     else{
+//         std::cout << "Not a valid amount to enter";
+//     }
+// }
+
+
+// double withdraw(){
+//     double amount;
+
+//     std::cout << "Enter the depoist amount: ";
+//     std::cin >> amount;
+    
+//     if(amount>0){
+//         return amount;
+//     }
+//     else{
+//         std::cout << "Not a valid amount to enter";
+//     }
+// }
+
+
+// void viewbalance(double balance){
+//     std::cout << "Your balance: " << balance << "\n";
+// }
+
+#include <iostream>
 
 int main(){
 
-    int choise;
-    double balance;
+    char choise;
+    double a;
+    double b;
 
-    do
-    {
-        std::cout << "Enter any bellow option\n" << "1. deposit\n" << "2. withdraw\n" << "3. viewbalance\n" << "4. Exit\n";
-    std::cin >> choise;
-    
+    std::cout << "Enter the value of a: \n";
+    std::cin >> a;
+
+    std::cout << "Enter the value of b: \n";
+    std::cin >> b;
+
+        std::cout << "---cal---\n";
+        std::cout << "Enter a operation\n" << "add='+'\n" << "sub='-'\n" << "mult='*'\n" << "div='/'\n";
+        std::cin >> choise;
+
     switch (choise)
     {
-    case 1:
-        balance += deposit();
-        viewbalance(balance);
+    case '+':
+        std::cout << "The value of a+b= " << a+b << "\n";
         break;
-    case 2:
-        balance -= withdraw();
-        viewbalance(balance);
+    case '-':
+        std::cout << "The value of a-b= " << a-b << "\n";
         break;
-    case 3:
-        viewbalance(balance);
+    case '*':
+        std::cout << "The value of a*b= " << a*b << "\n";
         break;
-    case 4:
-        std::cout << "thank you";
+    case '/':
+        std::cout << "The value of a/b= " << a/b << "\n";
         break;
-    default: 
-        std::cout << "Enter valid choise"; 
+    default:
+        std::cout << "Not valid operator";
+        break;
     }
-    } while (choise != 4);
-    
+    std::cout << "---END---";
 
     return 0;
-}
-
-double deposit(){
-    double amount;
-
-    std::cout << "Enter the depoist amount: ";
-    std::cin >> amount;
-    
-    if(amount>0){
-        return amount;
-    }
-    else{
-        std::cout << "Not a valid amount to enter";
-    }
-}
-
-
-double withdraw(){
-    double amount;
-
-    std::cout << "Enter the depoist amount: ";
-    std::cin >> amount;
-    
-    if(amount>0){
-        return amount;
-    }
-    else{
-        std::cout << "Not a valid amount to enter";
-    }
-}
-
-
-void viewbalance(double balance){
-    std::cout << "Your balance: " << balance << "\n";
 }
