@@ -118,43 +118,52 @@ int main(){
 //     std::cout << "Your balance: " << balance << "\n";
 // }
 
-#include <iostream>
+// #include <iostream>
 
-int main(){
+// int main(){
 
-    char choise;
-    double a;
-    double b;
+//     char choise;
+//     double a;
+//     double b;
 
-    std::cout << "Enter the value of a: \n";
-    std::cin >> a;
+//     std::cout << "Enter the value of a: \n";
+//     std::cin >> a;
 
-    std::cout << "Enter the value of b: \n";
-    std::cin >> b;
+//     std::cout << "Enter the value of b: \n";
+//     std::cin >> b;
 
-        std::cout << "---cal---\n";
-        std::cout << "Enter a operation\n" << "add='+'\n" << "sub='-'\n" << "mult='*'\n" << "div='/'\n";
-        std::cin >> choise;
+//         std::cout << "---cal---\n";
+//         std::cout << "Enter a operation\n" << "add='+'\n" << "sub='-'\n" << "mult='*'\n" << "div='/'\n";
+//         std::cin >> choise;
 
-    switch (choise)
-    {
-    case '+':
-        std::cout << "The value of a+b= " << a+b << "\n";
-        break;
-    case '-':
-        std::cout << "The value of a-b= " << a-b << "\n";
-        break;
-    case '*':
-        std::cout << "The value of a*b= " << a*b << "\n";
-        break;
-    case '/':
-        std::cout << "The value of a/b= " << a/b << "\n";
-        break;
-    default:
-        std::cout << "Not valid operator";
-        break;
-    }
-    std::cout << "---END---";
+//     switch (choise)
+//     {
+//     case '+':
+//         std::cout << "The value of a+b= " << a+b << "\n";
+//         break;
+//     case '-':
+//         std::cout << "The value of a-b= " << a-b << "\n";
+//         break;
+//     case '*':
+//         std::cout << "The value of a*b= " << a*b << "\n";
+//         break;
+//     case '/':
+//         std::cout << "The value of a/b= " << a/b << "\n";
+//         break;
+//     default:
+//         std::cout << "Not valid operator";
+//         break;
+//     }
+//     std::cout << "---END---";
 
-    return 0;
-}
+//     return 0;
+// }
+
+// #include <iostream>
+
+// int main(){
+
+//     int A[]={12,22,32,42};
+//     std::cout << A[3];
+//         return 0;
+// }
